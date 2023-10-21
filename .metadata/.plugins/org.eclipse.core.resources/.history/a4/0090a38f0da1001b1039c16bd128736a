@@ -1,0 +1,20 @@
+package practicals;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+
+public class Scripts {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver,chrome.driver","E:\\chromedriver\\chromedriver.exe" );
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+        Thread.sleep(5000);
+        driver.close();
+
+
+	}
+
+}

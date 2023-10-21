@@ -1,0 +1,16 @@
+package practicals;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class Read_excel {
+
+	public static void main(String[] args) {
+		File src = new File("");
+		FileInputStream fileinput= new FileInputStream(src);
+		Workbook wb= new XSSFWorkbook(fileInput);
+		XSSFSheet sheet1=(XSSFSheet) 
+		
+	}
+
+}

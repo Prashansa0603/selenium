@@ -1,0 +1,70 @@
+package practicals;
+
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.NoAlertPresentException;
+
+
+public class Alert {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver","D:\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+	    WebDriver driver = new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
+	    driver.findElement(By.name("proceed")).click();
+	    Thread.sleep(6000);
+	    
+	    //inbuilt class Alert
+	    Alert1 A = driver.switchTo().alert();
+	    System.out.println(A.getText());
+	    Thread.sleep(2000);
+	    A.accept();
+	    
+	    //second Alert
+	     driver.findElement(By.xpath("")).click(); // doubt
+	     Alert1 A1 = driver.switchTo().alert();
+	     Thread.sleep(3000);
+	     A1.dismiss();
+	     
+	     //third Alert
+	     driver.findElement(By.xpath("")).click(); // doubt
+	     Alert1 a = driver.switchTo().alert();
+	     a.sendKeys(name); 
+	     Thread.sleep(3000);
+	     a.accept();
+	       
+	    
+	    
+	    driver.navigate().back();
+	    driver.close();
+	    
+	    
+/*
+	     WebDriver driver = new ChromeDriver();
+	     
+	     driver.manage().window().maximize();
+	     
+	     driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
+	     
+	     driver.findElement(By.name("proceed")).click();
+	     
+	     Thread.sleep(6000);
+	     
+	     org.openqa.selenium.Alert A =  driver.switchTo().alert();
+	     
+	     System.out.println(A.getText());
+	     
+	     A.accept();
+	     
+	     driver.navigate().back();
+	     driver.close();
+	    */
+	     
+	}
+
+	}
+
+

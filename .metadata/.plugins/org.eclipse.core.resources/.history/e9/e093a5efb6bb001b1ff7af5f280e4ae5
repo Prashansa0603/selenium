@@ -1,0 +1,28 @@
+package Adselenium;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+
+public class Read {
+
+	public static void hybridread(WebDriver w) {
+		FileInputStream I = new FileInputStream("");
+		XSSFWorkbook wb=new XSSFWorkbook(I);
+		XSSFSheet s=wb.getSheet("LoginTest");
+		for(int i=0; i<=s.getLastRowNum();i++)
+		{
+			try
+			{
+				String un=s.getRow(i).getCell(0).toString();
+				String pw=s.getRow(1).getCell(1).toString(
+
+			}
+		}		
+		
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package Adselenium;
+
+public class Windowshandling {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

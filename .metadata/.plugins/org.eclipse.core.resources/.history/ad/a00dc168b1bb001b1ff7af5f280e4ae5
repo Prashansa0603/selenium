@@ -1,0 +1,37 @@
+package Adselenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Functions {
+	
+	public static void openUrl(WebDriver w)
+	{
+	 w.get("");// method  body	
+	}
+	public static void username(WebDriver w, String un)
+	{
+		w.findElement(By.name("username")).sendKeys(un);
+	}
+	public static void password(WebDriver w, String pw)
+	{
+		w.findElement(By.name("password")).sendKeys(pw);
+	}
+	public 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+	
+	}
+
+}

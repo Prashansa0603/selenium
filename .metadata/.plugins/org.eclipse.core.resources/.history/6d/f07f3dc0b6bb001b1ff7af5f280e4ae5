@@ -1,0 +1,14 @@
+package Adselenium;
+
+import java.io.FileInputStream;
+
+public class Read {
+
+	public static void main(String[] args) {
+		FileInputStream I = new FileInputStream(WebDriver w)
+		
+		
+		
+	}
+
+}

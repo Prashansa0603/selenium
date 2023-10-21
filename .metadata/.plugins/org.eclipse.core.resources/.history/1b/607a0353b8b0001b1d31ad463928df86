@@ -1,0 +1,37 @@
+package practicals;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class List {
+
+		public static void main(String[] args) throws InterruptedException {
+			System.setProperty("webdriver.chrome.driver"," " );
+			WebDriver driver = new ChromeDriver();
+			driver.get("https://www.amazon.in/");
+			Thread.sleep(50000);
+			driver.manage().window().maximize();
+		 WebElement bttn = driver.findElement(By.name("group1"));
+			int count=bttn.s
+				System.out.println(count);
+			for(int i=0;i<count; i++);
+			Object i;
+			{
+				System.out.println(bttn.get(i).getAttribute("value"));
+			}
+			bttn=driver.findElement(By.name("group2"));
+			int count1=bttn.
+				System.out.println(count1);
+			for(int i=0;i<count1; i++);
+			{
+				System.out.println(bttn.get(i).getAttribute("value"));
+			}
+			
+			
+			
+			
+	}
+
+}

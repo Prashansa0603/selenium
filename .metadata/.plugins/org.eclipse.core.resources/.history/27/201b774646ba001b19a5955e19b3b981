@@ -1,0 +1,9 @@
+package Adselenium;
+
+public class CompareImages {
+
+	public static void main(String[] args) {
+
+	}
+
+}

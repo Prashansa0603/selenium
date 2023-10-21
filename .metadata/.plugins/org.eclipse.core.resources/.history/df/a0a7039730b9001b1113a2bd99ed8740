@@ -1,0 +1,17 @@
+package Adselenium;
+
+public class Windowshandling {
+
+	public static void main(String[] args) {
+	     
+	     WebElement window1= driver.findElement(By.id("home"));
+	     window1.click();
+	     
+	     
+	     
+	}
+
+
+	}
+
+}
